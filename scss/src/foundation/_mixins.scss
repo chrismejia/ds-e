@@ -1,0 +1,29 @@
+/*=============================================
+=            Mixins            =
+=============================================*/
+
+/**
+ *
+ * Helpful reusable function-like styles that can be re-used throughout
+ * your stylesheet. They make it easy to avoid using non-semantic classes,
+ * and to distribute collections of styles in libraries.
+ *
+ */
+
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
