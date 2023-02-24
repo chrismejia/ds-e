@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "@ds-e/scss",
   "version": "1.0.0",
   "main": "index.js",
@@ -18,7 +19,8 @@
   },
   "scripts": {
     "lint": "npx stylelint \"**/*.scss\"",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "postinstall": "husky install"
   },
   "husky": {
     "hooks": {
