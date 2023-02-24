@@ -8,6 +8,8 @@
     "postcss": "^8.4.21"
   },
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
     "stylelint": "^15.2.0",
     "stylelint-config-sass-guidelines": "^9.0.1",
@@ -17,5 +19,13 @@
   "scripts": {
     "lint": "npx stylelint \"**/*.scss\"",
     "lint:fix": "yarn lint --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": "yarn lint:fix"
   }
 }
