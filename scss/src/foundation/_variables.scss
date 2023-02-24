@@ -23,37 +23,34 @@
  * Spacing          Global fixed set of spacing variables
  */
 
-/*=============================================
+/* =============================================
 =            Colors                           =
-=============================================*/
+============================================= */
 
-/*----------  Brand Colors  ----------*/
+/* ----------  Brand Colors  ---------- */
 $green: #5ece7b;
 $green-light: #9ee2b0;
-
 $dark: #1d1f22;
 $dark-light: #737680;
 
-/*----------  Neutral Colors  ----------*/
+/* ----------  Neutral Colors  ---------- */
 $gray: #a3a5ad;
 $gray-light: #bebfc4;
-
 $white: #fff;
 $white-dark: #f1f2f3;
 
-/*----------  Utility Colors  ----------*/
+/* ----------  Utility Colors  ---------- */
 
 $red: #d12727;
 $red-light: #f8dedf;
-
 $blue: #0468db;
 $blue-light: #b4d2f4;
 
-/*=====  End of Colors  ======*/
+/* =====  End of Colors  ====== */
 
-/*=============================================
+/* =============================================
 =           Typography                        =
-=============================================*/
+============================================= */
 
 /**
  * 1) The Playfair font. We'll use this mainly for headings.
@@ -63,12 +60,12 @@ $blue-light: #b4d2f4;
  *    https://fonts.google.com/specimen/Raleway
  */
 
-/*----------  Font Families  ----------*/
+/* ----------  Font Families  ---------- */
 
-$playfair: "Playfair Display", serif; /* 1 */
-$raleway: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif; /* 2 */
+$playfair: 'Playfair Display', serif; /* 1 */
+$raleway: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; /* 2 */
 
-/*----------  Font Sizes  ----------*/
+/* ----------  Font Sizes  ---------- */
 
 $fs-xs: 0.75rem; // 12px
 $fs-sm: 0.875rem; // 14px
@@ -76,7 +73,7 @@ $fs-base: 1rem; // 16px
 $fs-lg: 1.125rem; // 18px
 $fs-xl: 1.5rem; // 24px
 
-/*----------  Heading Font Sizes  ----------*/
+/* ----------  Heading Font Sizes  ---------- */
 
 $h-1: 1.375rem; // 22px
 $h-2: 1.375rem; // 22px
@@ -85,7 +82,7 @@ $h-4: 1.125rem; // 18px
 $h-5: 0.75rem; // 12px
 $h-6: 0.75rem; // 12px
 
-/*----------  Font Weights  ----------*/
+/* ----------  Font Weights  ---------- */
 
 $fw-light: 300;
 $fw-normal: 400;
@@ -95,11 +92,11 @@ $fw-bold: 700;
 $fw-extrabold: 800;
 $fw-black: 900;
 
-/*=====  End of Typography  ======*/
+/* =====  End of Typography  ====== */
 
-/*=============================================
+/* =============================================
 =            Breakpoints                      =
-=============================================*/
+============================================= */
 
 $breakpoints: (
   md: 48rem,
@@ -110,14 +107,14 @@ $breakpoints: (
   // 1280px
 );
 
-/*=====  End of Breakpoints  ======*/
+/* =====  End of Breakpoints  ====== */
 
-/*=============================================
+/* =============================================
 =            Spacing                          =
-=============================================*/
+============================================= */
 
 $spacing: (
-  none: 0rem,
+  none: 0,
   xxxs: 0.25rem,
   // 4px
   xxs: 0.5rem,
@@ -137,9 +134,8 @@ $spacing: (
   xxxl: 6rem,
   // 96px
 ) !default;
-
 $shadows: (
-  base: 0px 4px 11px rgba(157, 157, 157, 0.21),
+  base: 0 4px 11px rgb(157 157 157 / 21%),
 );
 
-/*=====  End of Spacing  ======*/
+/* =====  End of Spacing  ====== */
